@@ -1,0 +1,1002 @@
+[
+  {
+    "company_name": "CodeStream Analytics",
+    "sector": "Software Development",
+    "description": "CodeStream Analytics provides an AI-driven DevOps observability platform designed to identify bottleneck patterns in microservices. It integrates seamlessly with popular repositories to predict deployment failures based on historical data. By automating root-cause analysis, enterprise teams can significantly reduce resolution times.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-08-14",
+    "employee_count": 145,
+    "founding_year": 2021,
+    "headquarters_location": "Austin, TX, USA"
+  },
+  {
+    "company_name": "CloudSentinel",
+    "sector": "Software Development",
+    "description": "CloudSentinel is a cybersecurity firm specializing in Cloud Security Posture Management for multi-cloud deployments. The software continuously scans infrastructure to identify misconfigurations and unauthorized access pathways in real-time. This provides automated remediation scripts, reducing the workload on security operations centers.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-03-22",
+    "employee_count": 180,
+    "founding_year": 2020,
+    "headquarters_location": "Tel Aviv, Israel"
+  },
+  {
+    "company_name": "APIWeaver",
+    "sector": "Software Development",
+    "description": "APIWeaver offers an automated documentation and testing suite for REST and GraphQL architectures. The platform reverse-engineers legacy endpoints to instantly generate standardized, interactive developer portals. This drastically cuts down developer onboarding time and ensures strict API governance.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-11-10",
+    "employee_count": 65,
+    "founding_year": 2023,
+    "headquarters_location": "San Francisco, CA, USA"
+  },
+  {
+    "company_name": "NebulaSync",
+    "sector": "Software Development",
+    "description": "NebulaSync creates edge-computing synchronization protocols for IoT developer ecosystems. Their lightweight SDK allows remote devices to cache data offline and resolve conflict states automatically upon reconnection. This enables stable application performance in low-bandwidth industrial environments.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2026-01-05",
+    "employee_count": 22,
+    "founding_year": 2024,
+    "headquarters_location": "Berlin, Germany"
+  },
+  {
+    "company_name": "QuantumBuild",
+    "sector": "Software Development",
+    "description": "QuantumBuild provides a decentralized CI/CD pipeline tailored for globally distributed engineering teams. The tool leverages peer-to-peer node networks to distribute compile loads, cutting build times by over half. It is rapidly gaining traction among open-source consortiums and blockchain developers.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-09-30",
+    "employee_count": 48,
+    "founding_year": 2022,
+    "headquarters_location": "London, UK"
+  },
+  {
+    "company_name": "SyntaxCore",
+    "sector": "Software Development",
+    "description": "SyntaxCore develops low-code internal tooling platforms designed specifically for database administrators. The drag-and-drop interface allows non-engineers to build secure CRUD applications over existing PostgreSQL and MySQL databases. This eliminates the traditional IT backlog for internal dashboard requests.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-12-12",
+    "employee_count": 210,
+    "founding_year": 2019,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "LogicSpire",
+    "sector": "Software Development",
+    "description": "LogicSpire builds automated code refactoring AI for enterprise legacy modernization. The engine scans monolithic Java and C# codebases to suggest modular microservice architectures automatically. This helps Fortune 500 companies migrate off on-premise servers with minimal manual recoding.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-07-20",
+    "employee_count": 115,
+    "founding_year": 2021,
+    "headquarters_location": "Boston, MA, USA"
+  },
+  {
+    "company_name": "ThreadScale",
+    "sector": "Software Development",
+    "description": "ThreadScale offers serverless container orchestration for high-frequency trading platforms. The technology dynamically scales compute resources in milliseconds to handle extreme spikes in data ingestion. This ensures zero-latency performance during volatile market events.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-10-15",
+    "employee_count": 85,
+    "founding_year": 2023,
+    "headquarters_location": "Chicago, IL, USA"
+  },
+  {
+    "company_name": "MeshOps",
+    "sector": "Software Development",
+    "description": "MeshOps provides visual telemetry mapping for complex Kubernetes clusters. The software automatically diagrams network policies, highlighting redundant resource allocation and security blind spots. Platform engineering teams use it to optimize cloud spend and enforce compliance.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-04-10",
+    "employee_count": 18,
+    "founding_year": 2024,
+    "headquarters_location": "Denver, CO, USA"
+  },
+  {
+    "company_name": "BuildJet AI",
+    "sector": "Software Development",
+    "description": "BuildJet AI creates synthetic test data generation engines for QA automation. By analyzing production database schemas, it generates millions of highly realistic, compliant mock user profiles for load testing. This allows companies to stress-test applications without risking PII data leaks.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-06-25",
+    "employee_count": 150,
+    "founding_year": 2020,
+    "headquarters_location": "Seattle, WA, USA"
+  },
+  {
+    "company_name": "CyberHive",
+    "sector": "Software Development",
+    "description": "CyberHive is an API security platform focused on detecting shadow APIs and rogue endpoints. It uses behavioral analytics to flag abnormal data exfiltration attempts before standard firewalls register a breach. They currently protect over two billion API calls daily for enterprise clients.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2025-02-18",
+    "employee_count": 320,
+    "founding_year": 2018,
+    "headquarters_location": "Austin, TX, USA"
+  },
+  {
+    "company_name": "AppForge",
+    "sector": "Software Development",
+    "description": "AppForge builds cross-platform rendering engines for mobile game developers. Their proprietary compiler allows studios to write code once and deploy natively to iOS, Android, and WebGL with zero performance loss. This significantly shortens the time-to-market for mid-core gaming titles.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-08-05",
+    "employee_count": 55,
+    "founding_year": 2022,
+    "headquarters_location": "Montreal, QC, Canada"
+  },
+  {
+    "company_name": "StackGuardian",
+    "sector": "Software Development",
+    "description": "StackGuardian offers an infrastructure-as-code (IaC) security scanning tool for Terraform and CloudFormation. It embeds directly into the developer IDE to block insecure infrastructure deployments before they are committed. This shifts cloud security entirely to the left in the DevOps lifecycle.",
+    "funding_stage": "Pre-seed",
+    "last_funding_date": "2026-02-10",
+    "employee_count": 8,
+    "founding_year": 2025,
+    "headquarters_location": "Remote, USA"
+  },
+  {
+    "company_name": "DataFlowX",
+    "sector": "Software Development",
+    "description": "DataFlowX develops a streaming ETL framework that processes massive datasets in real-time. By utilizing memory-optimized data pipelines, it bypasses the need for traditional, slow batch processing. This empowers data science teams to train machine learning models on live data feeds.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-11-20",
+    "employee_count": 135,
+    "founding_year": 2021,
+    "headquarters_location": "San Jose, CA, USA"
+  },
+  {
+    "company_name": "UXLens",
+    "sector": "Software Development",
+    "description": "UXLens provides advanced session replay and user frustration tracking for web applications. The tool automatically detects rage clicks and navigation dead-ends, generating actionable reports for frontend teams. This data-driven approach directly correlates UI improvements to increased conversion rates.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-05-15",
+    "employee_count": 25,
+    "founding_year": 2023,
+    "headquarters_location": "Dublin, Ireland"
+  },
+  {
+    "company_name": "OmniDeploy",
+    "sector": "Software Development",
+    "description": "OmniDeploy builds multi-region deployment automation software for SaaS providers. The platform handles DNS routing, database replication, and localized compliance automatically when expanding to new geographic zones. This allows startups to achieve global availability without hiring specialized infrastructure engineers.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-01-30",
+    "employee_count": 70,
+    "founding_year": 2022,
+    "headquarters_location": "Toronto, ON, Canada"
+  },
+  {
+    "company_name": "TraceLogic",
+    "sector": "Software Development",
+    "description": "TraceLogic develops distributed tracing tools tailored for serverless functions like AWS Lambda. It stitches together fragmented execution logs to provide a unified view of user requests across ephemeral environments. This drastically improves debugging speeds in highly decoupled architectures.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-09-14",
+    "employee_count": 280,
+    "founding_year": 2019,
+    "headquarters_location": "San Francisco, CA, USA"
+  },
+  {
+    "company_name": "FeatureToggle AI",
+    "sector": "Software Development",
+    "description": "FeatureToggle AI offers an intelligent feature flag management system for product teams. It uses machine learning to gradually roll out features and automatically halt deployments if user engagement drops or error rates spike. This enables highly mature continuous delivery and A/B testing at scale.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-10-02",
+    "employee_count": 110,
+    "founding_year": 2021,
+    "headquarters_location": "Atlanta, GA, USA"
+  },
+  {
+    "company_name": "CodeArmor",
+    "sector": "Software Development",
+    "description": "CodeArmor builds obfuscation and anti-tampering software for intellectual property protection. The compiler injects polymorphic code patterns, making it mathematically unfeasible for competitors to reverse-engineer proprietary algorithms. It is heavily utilized by financial modeling and defense software contractors.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-06-11",
+    "employee_count": 45,
+    "founding_year": 2023,
+    "headquarters_location": "Reston, VA, USA"
+  },
+  {
+    "company_name": "MicroState",
+    "sector": "Software Development",
+    "description": "MicroState provides lightweight state management libraries for modern frontend frameworks. Its reactive architecture minimizes unnecessary DOM re-renders, resulting in highly performant browser applications. The open-source core has fostered a rapidly growing community of enterprise contributors.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-12-01",
+    "employee_count": 14,
+    "founding_year": 2024,
+    "headquarters_location": "Amsterdam, Netherlands"
+  },
+  {
+    "company_name": "MediSync Pathways",
+    "sector": "Healthcare",
+    "description": "MediSync Pathways develops interoperability middleware that translates patient data between legacy EHR systems and modern telehealth platforms. Their proprietary engine ensures HIPAA-compliant data streaming, reducing patient onboarding time. The system acts as a unified translation layer for disjointed hospital networks.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-11-02",
+    "employee_count": 78,
+    "founding_year": 2023,
+    "headquarters_location": "Boston, MA, USA"
+  },
+  {
+    "company_name": "VitalNode Diagnostics",
+    "sector": "Healthcare",
+    "description": "VitalNode Diagnostics creates AI-assisted imaging software to accelerate the detection of early-stage oncological anomalies. The neural networks are trained to highlight microscopic tissue irregularities missed by the human eye. This software acts as a highly accurate second read for overwhelmed radiologists.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2025-09-08",
+    "employee_count": 275,
+    "founding_year": 2019,
+    "headquarters_location": "Toronto, ON, Canada"
+  },
+  {
+    "company_name": "CareFlow AI",
+    "sector": "Healthcare",
+    "description": "CareFlow AI provides predictive patient triage software for high-volume emergency departments. By analyzing vital signs and historical EHR data, it anticipates sudden patient deterioration hours before clinical symptoms appear. This allows nursing staff to intervene early and reduce ICU transfer rates.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-07-15",
+    "employee_count": 140,
+    "founding_year": 2020,
+    "headquarters_location": "Chicago, IL, USA"
+  },
+  {
+    "company_name": "GenoTarget",
+    "sector": "Healthcare",
+    "description": "GenoTarget develops precision medicine bioinformatics platforms for boutique oncology clinics. The software matches a patient's specific tumor genomic profile with actively enrolling clinical trials worldwide. This democratizes access to experimental therapeutics for patients outside major research hubs.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-12-10",
+    "employee_count": 55,
+    "founding_year": 2022,
+    "headquarters_location": "San Diego, CA, USA"
+  },
+  {
+    "company_name": "TeleTherapy Connect",
+    "sector": "Healthcare",
+    "description": "TeleTherapy Connect operates a B2B mental health platform licensed directly to mid-sized corporate HR departments. The app offers secure, asynchronous text counseling and video sessions with licensed therapists. It also aggregates anonymized mood data to help companies gauge overall employee burnout levels.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-03-05",
+    "employee_count": 110,
+    "founding_year": 2021,
+    "headquarters_location": "Denver, CO, USA"
+  },
+  {
+    "company_name": "SurgiVision",
+    "sector": "Healthcare",
+    "description": "SurgiVision creates augmented reality overlays for orthopedic surgeons during joint replacement procedures. Utilizing preoperative CT scans, the headset projects holographic guides onto the patient's anatomy to ensure millimeter-accurate bone resections. This reduces surgical time and improves long-term implant viability.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-11-22",
+    "employee_count": 190,
+    "founding_year": 2018,
+    "headquarters_location": "Minneapolis, MN, USA"
+  },
+  {
+    "company_name": "PharmaChain Solutions",
+    "sector": "Healthcare",
+    "description": "PharmaChain Solutions provides a blockchain-based cold chain tracking system for temperature-sensitive biologics. The platform ingests data from IoT sensors inside shipping crates to ensure vaccines remain within strict thermal parameters. This end-to-end visibility drastically cuts down on pharmaceutical spoilage.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-08-19",
+    "employee_count": 62,
+    "founding_year": 2023,
+    "headquarters_location": "Raleigh, NC, USA"
+  },
+  {
+    "company_name": "NuroFeedback",
+    "sector": "Healthcare",
+    "description": "NuroFeedback develops non-invasive EEG wearable devices coupled with gamified cognitive behavioral therapy apps. The system treats pediatric ADHD by training patients to consciously regulate their brainwave activity. It is currently pursuing FDA approval as a prescription digital therapeutic.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2026-01-12",
+    "employee_count": 24,
+    "founding_year": 2024,
+    "headquarters_location": "Austin, TX, USA"
+  },
+  {
+    "company_name": "ClearClaim Health",
+    "sector": "Healthcare",
+    "description": "ClearClaim Health automates the medical billing and coding process using natural language processing. The AI reads physician clinical notes to generate accurate ICD-10 codes, instantly checking them against insurer rules to prevent denials. This dramatically accelerates revenue cycles for independent physician practices.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-05-30",
+    "employee_count": 130,
+    "founding_year": 2020,
+    "headquarters_location": "Nashville, TN, USA"
+  },
+  {
+    "company_name": "RemoteVitals",
+    "sector": "Healthcare",
+    "description": "RemoteVitals offers an integrated remote patient monitoring kit for chronic heart failure management. The cellular-enabled smart scales and blood pressure cuffs beam daily readings directly to a centralized nursing dashboard. This proactive monitoring has proven to reduce costly 30-day hospital readmissions.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-04-18",
+    "employee_count": 75,
+    "founding_year": 2022,
+    "headquarters_location": "Miami, FL, USA"
+  },
+  {
+    "company_name": "BioSimulate",
+    "sector": "Healthcare",
+    "description": "BioSimulate creates in-silico modeling software for pharmaceutical drug discovery. By simulating molecular interactions within virtual human tissue models, the platform predicts drug toxicity before costly animal testing begins. This significantly shortens the preclinical phase of drug development.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-10-10",
+    "employee_count": 210,
+    "founding_year": 2019,
+    "headquarters_location": "Cambridge, MA, USA"
+  },
+  {
+    "company_name": "ElderTech Connect",
+    "sector": "Healthcare",
+    "description": "ElderTech Connect builds passive fall-detection and activity monitoring sensors for assisted living facilities. Using radar technology rather than cameras, it respects patient privacy while instantly alerting staff to anomalies in movement patterns. This addresses the severe staffing shortages currently plaguing eldercare.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-07-08",
+    "employee_count": 48,
+    "founding_year": 2023,
+    "headquarters_location": "Phoenix, AZ, USA"
+  },
+  {
+    "company_name": "NutriGenix",
+    "sector": "Healthcare",
+    "description": "NutriGenix offers a direct-to-consumer gut microbiome sequencing kit paired with an AI dietary app. Based on the bacterial makeup of a user's digestive tract, the platform recommends specific, personalized nutritional interventions to reduce inflammation. It effectively bridges the gap between wellness and clinical gastroenterology.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-09-15",
+    "employee_count": 30,
+    "founding_year": 2024,
+    "headquarters_location": "Los Angeles, CA, USA"
+  },
+  {
+    "company_name": "DuraDent AI",
+    "sector": "Healthcare",
+    "description": "DuraDent AI provides cloud-based CAD/CAM software for dental laboratories manufacturing crowns and bridges. The system automates the design of dental prosthetics based on 3D intraoral scans, reducing design time from hours to minutes. This allows local dental labs to compete with massive offshore manufacturing.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-02-14",
+    "employee_count": 95,
+    "founding_year": 2021,
+    "headquarters_location": "Dallas, TX, USA"
+  },
+  {
+    "company_name": "OptiDose",
+    "sector": "Healthcare",
+    "description": "OptiDose develops automated pharmacy compounding robotics for hospital intravenous (IV) medication preparation. The machines use computer vision to verify drug vials and ensure micro-gram accuracy during fluid transfer. This eliminates human error in high-risk pediatric and oncology dosages.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-11-20",
+    "employee_count": 60,
+    "founding_year": 2022,
+    "headquarters_location": "Cleveland, OH, USA"
+  },
+  {
+    "company_name": "VascularVR",
+    "sector": "Healthcare",
+    "description": "VascularVR creates highly realistic virtual reality surgical simulators for medical students. By utilizing haptic feedback controllers, the software allows trainees to practice complex endovascular catheter insertions in a zero-risk environment. Medical universities are rapidly adopting it to supplement cadaver labs.",
+    "funding_stage": "Pre-seed",
+    "last_funding_date": "2026-02-01",
+    "employee_count": 12,
+    "founding_year": 2025,
+    "headquarters_location": "Baltimore, MD, USA"
+  },
+  {
+    "company_name": "NeoNatal Safe",
+    "sector": "Healthcare",
+    "description": "NeoNatal Safe builds smart incubators equipped with continuous biomarker analysis sensors. The environment dynamically adjusts oxygen, humidity, and temperature based on the premature infant's real-time metabolic feedback. This hyper-personalized care drastically improves survival rates for extreme micro-preemies.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-08-12",
+    "employee_count": 165,
+    "founding_year": 2018,
+    "headquarters_location": "Philadelphia, PA, USA"
+  },
+  {
+    "company_name": "ClearMind Therapeutics",
+    "sector": "Healthcare",
+    "description": "ClearMind Therapeutics develops psychedelic-assisted psychotherapy protocols managed via a proprietary clinical app. The platform tracks patient vitals during in-clinic dosing and provides structured integration exercises during the weeks following treatment. They are currently leading Phase II trials for treatment-resistant depression.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-06-25",
+    "employee_count": 80,
+    "founding_year": 2021,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "HematoScan",
+    "sector": "Healthcare",
+    "description": "HematoScan provides automated, AI-driven blood smear analysis machines for mid-sized pathology labs. The optical device rapidly classifies white blood cell abnormalities, flagging potential leukemia cases instantly. This vastly improves throughput and accuracy over manual microscope inspection.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-10-18",
+    "employee_count": 52,
+    "founding_year": 2023,
+    "headquarters_location": "Atlanta, GA, USA"
+  },
+  {
+    "company_name": "Fertilify Data",
+    "sector": "Healthcare",
+    "description": "Fertilify Data builds predictive analytics software for IVF (In Vitro Fertilization) clinics to optimize embryo selection. By analyzing morphokinetic data from embryo incubators, the AI accurately predicts which embryos have the highest probability of implantation. This reduces the emotional and financial toll of failed IVF cycles.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-12-05",
+    "employee_count": 28,
+    "founding_year": 2024,
+    "headquarters_location": "San Francisco, CA, USA"
+  },
+  {
+    "company_name": "LedgerBridge",
+    "sector": "Financial Services",
+    "description": "LedgerBridge operates a B2B cross-border payment reconciliation network tailored for mid-market export businesses. The platform leverages distributed ledgers to provide instant transaction verification, drastically reducing traditional settlement periods. It includes automated currency hedging features that protect merchants from forex volatility.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-05-20",
+    "employee_count": 210,
+    "founding_year": 2020,
+    "headquarters_location": "London, UK"
+  },
+  {
+    "company_name": "EquiTrust Digital",
+    "sector": "Financial Services",
+    "description": "EquiTrust Digital provides a comprehensive wealth management operating system tailored for independent RIAs. The platform consolidates portfolio reporting, client billing, and compliance monitoring into an automated dashboard. This removes manual data reconciliation, allowing wealth managers to scale effortlessly.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-12-05",
+    "employee_count": 65,
+    "founding_year": 2023,
+    "headquarters_location": "Chicago, IL, USA"
+  },
+  {
+    "company_name": "LendFlow AI",
+    "sector": "Financial Services",
+    "description": "LendFlow AI builds embedded lending infrastructure for vertical SaaS companies. Their API allows platforms like restaurant management software to instantly offer working capital loans based on cash flow data. This creates a highly profitable new revenue stream for their SaaS partners.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2025-01-12",
+    "employee_count": 290,
+    "founding_year": 2019,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "FraudSentinel",
+    "sector": "Financial Services",
+    "description": "FraudSentinel develops biometric anti-fraud software for digital banking onboarding. It uses behavioral biometrics, analyzing typing cadence and device motion, to detect synthetic identities in real-time. This heavily reduces account takeover rates without adding friction to the user experience.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-08-10",
+    "employee_count": 155,
+    "founding_year": 2021,
+    "headquarters_location": "Tel Aviv, Israel"
+  },
+  {
+    "company_name": "CapTable OS",
+    "sector": "Financial Services",
+    "description": "CapTable OS provides equity management and valuation software specifically for European startups. It automates complex tax compliance issues across fragmented EU jurisdictions during employee stock option issuance. The platform is rapidly becoming the standard for pan-European venture backing.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-06-18",
+    "employee_count": 72,
+    "founding_year": 2022,
+    "headquarters_location": "Paris, France"
+  },
+  {
+    "company_name": "MicroInsure",
+    "sector": "Financial Services",
+    "description": "MicroInsure operates an API-first parametric insurance platform for gig economy workers. The smart contracts automatically trigger micro-payouts for weather delays or equipment failure without requiring a claims investigation. This provides a crucial financial safety net for independent contractors.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-11-25",
+    "employee_count": 35,
+    "founding_year": 2024,
+    "headquarters_location": "San Francisco, CA, USA"
+  },
+  {
+    "company_name": "YieldCurve Analytics",
+    "sector": "Financial Services",
+    "description": "YieldCurve Analytics provides advanced fixed-income portfolio stress testing for mid-tier regional banks. The cloud platform models massive macroeconomic shifts in interest rates to ensure banks maintain adequate liquidity buffers. This technology directly addresses regulatory concerns following recent banking sector instabilities.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-09-05",
+    "employee_count": 110,
+    "founding_year": 2020,
+    "headquarters_location": "Charlotte, NC, USA"
+  },
+  {
+    "company_name": "InvoiceClear",
+    "sector": "Financial Services",
+    "description": "InvoiceClear builds dynamic discounting and supply chain finance software for large manufacturing conglomerates. It allows buyers to pay suppliers early in exchange for a sliding-scale discount automatically calculated by cash flow needs. This optimizes corporate working capital while injecting liquidity into vulnerable supplier networks.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2025-03-14",
+    "employee_count": 220,
+    "founding_year": 2018,
+    "headquarters_location": "Atlanta, GA, USA"
+  },
+  {
+    "company_name": "CryptoAudit Pro",
+    "sector": "Financial Services",
+    "description": "CryptoAudit Pro develops tax reconciliation software for institutional digital asset hedge funds. The platform ingests data across hundreds of decentralized exchanges to accurately calculate cost basis and capital gains in highly volatile markets. It strictly ensures compliance with evolving IRS digital asset frameworks.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-10-22",
+    "employee_count": 58,
+    "founding_year": 2023,
+    "headquarters_location": "Miami, FL, USA"
+  },
+  {
+    "company_name": "PayStream Connect",
+    "sector": "Financial Services",
+    "description": "PayStream Connect offers a unified payroll API that integrates HR software directly with local banking rails worldwide. The system guarantees instant salary disbursements across 50+ countries, eliminating the typical multi-day clearing wait. This is a vital tool for companies employing a globally distributed remote workforce.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-02-08",
+    "employee_count": 145,
+    "founding_year": 2021,
+    "headquarters_location": "Dublin, Ireland"
+  },
+  {
+    "company_name": "TrustDeed",
+    "sector": "Financial Services",
+    "description": "TrustDeed automates the commercial real estate loan syndication process using smart contracts. It replaces manual email chains and complex legal documents with a secure, transparent dashboard for multi-bank lending groups. This significantly reduces the legal overhead and time required to close massive property deals.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-07-30",
+    "employee_count": 64,
+    "founding_year": 2022,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "RetailScore AI",
+    "sector": "Financial Services",
+    "description": "RetailScore AI provides alternative credit scoring for the unbanked populations in emerging markets. By analyzing smartphone metadata and utility payment histories, it generates a highly accurate default risk profile. This empowers micro-lenders to safely extend credit to previously invisible consumers.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2026-01-20",
+    "employee_count": 26,
+    "founding_year": 2024,
+    "headquarters_location": "Singapore, Singapore"
+  },
+  {
+    "company_name": "SpendGuard",
+    "sector": "Financial Services",
+    "description": "SpendGuard develops intelligent corporate card and expense management software for venture-backed startups. The platform utilizes AI to auto-categorize transactions, spot duplicate SaaS subscriptions, and enforce budget caps in real-time. This provides finance teams with continuous visibility into cash burn rates.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-11-10",
+    "employee_count": 125,
+    "founding_year": 2020,
+    "headquarters_location": "San Francisco, CA, USA"
+  },
+  {
+    "company_name": "ClearTrade SEC",
+    "sector": "Financial Services",
+    "description": "ClearTrade SEC builds automated trade surveillance and compliance monitoring tools for retail brokerages. The engine scans millions of daily trades to detect insider trading patterns, wash sales, and market manipulation attempts instantly. This heavily mitigates the risk of massive regulatory fines.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2025-04-05",
+    "employee_count": 195,
+    "founding_year": 2019,
+    "headquarters_location": "Boston, MA, USA"
+  },
+  {
+    "company_name": "AltsInvest",
+    "sector": "Financial Services",
+    "description": "AltsInvest provides a fractionalization platform allowing retail investors to access alternative assets like fine art and private equity. The user-friendly interface handles the complex legal entity structuring required to legally split ownership shares. This democratizes high-yield investments historically reserved for ultra-high-net-worth individuals.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-09-12",
+    "employee_count": 48,
+    "founding_year": 2023,
+    "headquarters_location": "Chicago, IL, USA"
+  },
+  {
+    "company_name": "CarbonLedger",
+    "sector": "Financial Services",
+    "description": "CarbonLedger operates a verifiable carbon credit exchange specifically for the voluntary corporate market. The platform utilizes satellite imagery and AI to rigorously audit reforestation projects, ensuring that purchased credits represent genuine carbon sequestration. This effectively prevents corporate greenwashing claims.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-12-18",
+    "employee_count": 22,
+    "founding_year": 2024,
+    "headquarters_location": "London, UK"
+  },
+  {
+    "company_name": "WealthBot Dynamics",
+    "sector": "Financial Services",
+    "description": "WealthBot Dynamics creates white-label robo-advisory engines for traditional community banks and credit unions. The software seamlessly integrates into existing banking apps, allowing regional institutions to offer sophisticated, algorithmically rebalanced portfolios. This prevents them from losing tech-savvy millennial depositors to major fintechs.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-05-22",
+    "employee_count": 88,
+    "founding_year": 2021,
+    "headquarters_location": "Austin, TX, USA"
+  },
+  {
+    "company_name": "DeFi Sentinel",
+    "sector": "Financial Services",
+    "description": "DeFi Sentinel builds smart contract auditing and real-time threat detection for decentralized finance protocols. By scanning blockchain mempools, it detects malicious flash-loan attacks and can auto-pause protocols before funds are drained. This layer of security is vital for institutional adoption of Web3 finance.",
+    "funding_stage": "Pre-seed",
+    "last_funding_date": "2026-02-15",
+    "employee_count": 14,
+    "founding_year": 2025,
+    "headquarters_location": "Lisbon, Portugal"
+  },
+  {
+    "company_name": "MarginClear",
+    "sector": "Financial Services",
+    "description": "MarginClear automates derivative margin call processing for mid-sized institutional asset managers. The platform consolidates data from prime brokers and custodians to instantly calculate daily collateral requirements accurately. This vastly reduces operational risk and dispute resolution times in complex trading environments.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-08-28",
+    "employee_count": 55,
+    "founding_year": 2022,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "PensionSync",
+    "sector": "Financial Services",
+    "description": "PensionSync offers a unified API that connects legacy 401(k) and pension administration systems with modern HR software. The automation ensures accurate employee deferral contributions and strict compliance with ERISA regulations. This fundamentally streamlines retirement plan management for growing businesses.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-12-05",
+    "employee_count": 175,
+    "founding_year": 2019,
+    "headquarters_location": "Denver, CO, USA"
+  },
+  {
+    "company_name": "OmniMachina",
+    "sector": "Manufacturing",
+    "description": "OmniMachina provides an IIoT platform engineered for mid-sized plastic injection molding facilities. By retrofitting sensors onto legacy equipment, it captures vibration data to accurately predict mechanical failures. This predictive maintenance maximizes machine uptime and shifts factories away from reactive repairs.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2026-01-15",
+    "employee_count": 95,
+    "founding_year": 2022,
+    "headquarters_location": "Detroit, MI, USA"
+  },
+  {
+    "company_name": "PrecisionAlloy",
+    "sector": "Manufacturing",
+    "description": "PrecisionAlloy develops cloud-based supply chain mapping software for the aerospace and defense sectors. The platform utilizes advanced data scraping to create a multi-tier visibility map of raw material sourcing. This instantly identifies geopolitical risks deep within supplier networks before production halts.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-11-20",
+    "employee_count": 32,
+    "founding_year": 2024,
+    "headquarters_location": "Seattle, WA, USA"
+  },
+  {
+    "company_name": "CobotFlow",
+    "sector": "Manufacturing",
+    "description": "CobotFlow builds intuitive visual programming interfaces for collaborative factory robots. The software allows floor managers with no coding experience to quickly train robot arms for dynamic assembly and packaging tasks. This enables highly flexible manufacturing lines for low-volume, high-mix production runs.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-04-12",
+    "employee_count": 110,
+    "founding_year": 2021,
+    "headquarters_location": "Boston, MA, USA"
+  },
+  {
+    "company_name": "YieldVision AI",
+    "sector": "Manufacturing",
+    "description": "YieldVision AI provides computer vision quality control systems for semiconductor fabrication plants. High-speed cameras and neural networks inspect silicon wafers at a microscopic level, instantly discarding defective chips before final packaging. This massively reduces costly downstream failures and optimizes total yield.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-09-28",
+    "employee_count": 240,
+    "founding_year": 2018,
+    "headquarters_location": "San Jose, CA, USA"
+  },
+  {
+    "company_name": "MaterialTwin",
+    "sector": "Manufacturing",
+    "description": "MaterialTwin creates digital twin simulation software for metallurgy and advanced composite manufacturing. Engineers use the platform to simulate the thermodynamic properties of new alloys without pouring physical test batches. This drastically accelerates R&D cycles for automotive and aerospace material science.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-07-15",
+    "employee_count": 68,
+    "founding_year": 2023,
+    "headquarters_location": "Pittsburgh, PA, USA"
+  },
+  {
+    "company_name": "TracePack Systems",
+    "sector": "Manufacturing",
+    "description": "TracePack Systems develops serialized tracking software for food and beverage packaging lines. The system assigns a unique cryptographic QR code to every individual item, ensuring total track-and-trace capability from factory to consumer. This significantly limits the scope and cost of potential food safety recalls.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-02-20",
+    "employee_count": 135,
+    "founding_year": 2020,
+    "headquarters_location": "Chicago, IL, USA"
+  },
+  {
+    "company_name": "AeroPrint 3D",
+    "sector": "Manufacturing",
+    "description": "AeroPrint 3D operates a decentralized network of industrial metal 3D printers available on-demand. Defense contractors upload CAD files to the platform, and the system routes the job to the nearest available machine with the proper titanium alloys. This solves localized supply chain issues for critical spare parts.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-10-05",
+    "employee_count": 45,
+    "founding_year": 2022,
+    "headquarters_location": "Austin, TX, USA"
+  },
+  {
+    "company_name": "ShopFloor Connect",
+    "sector": "Manufacturing",
+    "description": "ShopFloor Connect builds ruggedized tablet software that digitizes standard operating procedures for factory line workers. The interface provides step-by-step assembly videos and instantly alerts supervisors to missing components or safety hazards. This bridges the communication gap between management and frontline operations.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2026-01-25",
+    "employee_count": 28,
+    "founding_year": 2024,
+    "headquarters_location": "Milwaukee, WI, USA"
+  },
+  {
+    "company_name": "GreenForge",
+    "sector": "Manufacturing",
+    "description": "GreenForge develops energy optimization algorithms for heavy-duty industrial furnaces and smelters. By continually analyzing sensor data and local electricity grid pricing, the software adjusts heating cycles to minimize carbon footprint and power costs. This is essential for plants attempting to meet strict ESG mandates.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-06-10",
+    "employee_count": 92,
+    "founding_year": 2021,
+    "headquarters_location": "Cleveland, OH, USA"
+  },
+  {
+    "company_name": "AutoCalibrate AI",
+    "sector": "Manufacturing",
+    "description": "AutoCalibrate AI creates automated laser calibration tools for high-precision CNC machining centers. The portable device mounts directly onto the machine spindle, running diagnostic routines that self-correct tool wear deviations in minutes. This effectively eliminates the manual downtime traditionally required for machine truing.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-12-01",
+    "employee_count": 50,
+    "founding_year": 2023,
+    "headquarters_location": "Munich, Germany"
+  },
+  {
+    "company_name": "InventoryPulse",
+    "sector": "Manufacturing",
+    "description": "InventoryPulse builds RFID drone systems that autonomously navigate massive warehousing and raw material staging areas. The drones scan pallets during overnight shifts, providing an exact, error-free inventory count by morning. This eliminates inventory write-offs and ensures production is never halted due to missing stock.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-11-05",
+    "employee_count": 180,
+    "founding_year": 2019,
+    "headquarters_location": "Atlanta, GA, USA"
+  },
+  {
+    "company_name": "ChemBlend OS",
+    "sector": "Manufacturing",
+    "description": "ChemBlend OS provides recipe management and batch control software for specialty chemical manufacturers. The platform strictly enforces material mixing ratios and hazardous handling protocols, automatically generating compliance documentation for regulatory bodies. This ensures total product consistency across different global production facilities.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-03-18",
+    "employee_count": 115,
+    "founding_year": 2020,
+    "headquarters_location": "Houston, TX, USA"
+  },
+  {
+    "company_name": "TextileTrace",
+    "sector": "Manufacturing",
+    "description": "TextileTrace utilizes blockchain infrastructure to verify the ethical sourcing of raw cotton and synthetic fabrics. The platform integrates deeply with overseas mills, ensuring that labor standards and ecological dye regulations are documented immutably. Fashion brands leverage this transparency for highly effective consumer marketing.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-08-14",
+    "employee_count": 19,
+    "founding_year": 2024,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "WeldVision",
+    "sector": "Manufacturing",
+    "description": "WeldVision creates real-time acoustic and thermal monitoring software for automated robotic welding cells. By analyzing the sound frequency and heat dissipation of a weld as it happens, the system immediately halts production if a microscopic fracture is detected. This prevents the mass production of structurally compromised automotive frames.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-10-30",
+    "employee_count": 65,
+    "founding_year": 2022,
+    "headquarters_location": "Detroit, MI, USA"
+  },
+  {
+    "company_name": "PartScout AI",
+    "sector": "Manufacturing",
+    "description": "PartScout AI builds generative design software that analyzes legacy 2D blueprints to suggest lightweight, 3D-printable alternatives. The AI optimizes part geometry to reduce material usage without sacrificing tensile strength. This is heavily utilized by heavy machinery companies looking to modernize aging product lines.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-01-20",
+    "employee_count": 105,
+    "founding_year": 2021,
+    "headquarters_location": "Denver, CO, USA"
+  },
+  {
+    "company_name": "FlowPack Robotics",
+    "sector": "Manufacturing",
+    "description": "FlowPack Robotics engineers modular, fast-changeover packaging machinery for consumer packaged goods (CPG) companies. Their servo-driven systems can switch from boxing cereals to bagging snacks in under ten minutes via a touchscreen interface. This flexibility is critical for manufacturers handling diverse, small-batch product portfolios.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-07-12",
+    "employee_count": 250,
+    "founding_year": 2018,
+    "headquarters_location": "Cincinnati, OH, USA"
+  },
+  {
+    "company_name": "ScrapSort AI",
+    "sector": "Manufacturing",
+    "description": "ScrapSort AI provides intelligent conveyor belt sorting systems for industrial metal recycling plants. Using hyper-spectral imaging, the machinery accurately separates different grades of aluminum, copper, and steel at incredibly high speeds. This maximizes the resale value of recycled materials and promotes a circular economy.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-05-10",
+    "employee_count": 58,
+    "founding_year": 2023,
+    "headquarters_location": "Toronto, ON, Canada"
+  },
+  {
+    "company_name": "ErgoMotion Data",
+    "sector": "Manufacturing",
+    "description": "ErgoMotion Data develops wearable biomechanical sensors tailored for manual assembly line workers. The software analyzes movement patterns to flag highly repetitive or stressful joint motions that lead to chronic injuries. Safety managers use this data to redesign workstations and dramatically reduce worker compensation claims.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-11-05",
+    "employee_count": 25,
+    "founding_year": 2024,
+    "headquarters_location": "Seattle, WA, USA"
+  },
+  {
+    "company_name": "FluidDynamics Pro",
+    "sector": "Manufacturing",
+    "description": "FluidDynamics Pro offers smart valve and pipeline monitoring software for large-scale breweries and dairies. The IoT system detects microscopic pressure drops and sanitization flow errors, preventing massive batches from spoiling due to contamination. This guarantees product quality and minimizes costly liquid waste.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-08-25",
+    "employee_count": 85,
+    "founding_year": 2020,
+    "headquarters_location": "Denver, CO, USA"
+  },
+  {
+    "company_name": "MoldMaster AI",
+    "sector": "Manufacturing",
+    "description": "MoldMaster AI utilizes machine learning to optimize injection molding temperature and pressure settings dynamically. It learns the specific viscosity of different recycled plastics, automatically adjusting the machine parameters to prevent warping and defects. This allows manufacturers to utilize cheaper, less consistent raw materials profitably.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2026-02-05",
+    "employee_count": 42,
+    "founding_year": 2023,
+    "headquarters_location": "Charlotte, NC, USA"
+  },
+  {
+    "company_name": "CartVelocity",
+    "sector": "Retail",
+    "description": "CartVelocity builds headless commerce backend infrastructure designed for high-volume DTC conglomerates. The modular architecture allows brands to deploy customized storefronts across web and AR platforms while maintaining unified inventory. It includes a dynamic algorithmic pricing engine based on real-time competitor analysis.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-10-10",
+    "employee_count": 340,
+    "founding_year": 2018,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "Shelffront AI",
+    "sector": "Retail",
+    "description": "Shelffront AI utilizes computer vision for automated planogram compliance and out-of-stock monitoring in grocery chains. It processes feeds from security cameras to detect empty shelves and route restocking tasks directly to employee devices. This optimizes localized labor allocation and captures millions in lost sales.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-08-30",
+    "employee_count": 120,
+    "founding_year": 2021,
+    "headquarters_location": "Bentonville, AR, USA"
+  },
+  {
+    "company_name": "OmniReturn",
+    "sector": "Retail",
+    "description": "OmniReturn provides a centralized reverse logistics platform for mid-market apparel retailers. The software dynamically calculates whether a returned item should be restocked, liquidated, or donated based on shipping costs and item depreciation. This turns a massive operational loss leader into an optimized, sustainable process.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-03-12",
+    "employee_count": 145,
+    "founding_year": 2020,
+    "headquarters_location": "Columbus, OH, USA"
+  },
+  {
+    "company_name": "StoreFootprint",
+    "sector": "Retail",
+    "description": "StoreFootprint utilizes anonymized WiFi and Bluetooth ping data to map customer foot traffic within physical retail spaces. The analytics dashboard shows store managers exactly which aisles are hot spots and which endcaps are being ignored. This data directly drives decisions on floor layouts and premium product placements.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-11-20",
+    "employee_count": 65,
+    "founding_year": 2022,
+    "headquarters_location": "San Francisco, CA, USA"
+  },
+  {
+    "company_name": "DropShip Dynamics",
+    "sector": "Retail",
+    "description": "DropShip Dynamics builds vetted supplier networking software for independent Shopify merchants. The platform guarantees rapid shipping times by exclusively integrating with domestic warehousing networks rather than overseas factories. This drastically improves consumer trust and lowers refund rates for small e-commerce operators.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-09-05",
+    "employee_count": 30,
+    "founding_year": 2024,
+    "headquarters_location": "Austin, TX, USA"
+  },
+  {
+    "company_name": "FitPredict AR",
+    "sector": "Retail",
+    "description": "FitPredict AR develops augmented reality virtual try-on technology for online eyewear and cosmetic brands. The web-based engine scans a user's face with millimeter accuracy, superimposing highly realistic product renderings. This immersive shopping experience directly correlates to higher conversion rates and fewer sizing returns.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-07-22",
+    "employee_count": 55,
+    "founding_year": 2023,
+    "headquarters_location": "Los Angeles, CA, USA"
+  },
+  {
+    "company_name": "LocalStock Network",
+    "sector": "Retail",
+    "description": "LocalStock Network provides omnichannel inventory syncing between independent boutique shops and major online marketplaces. It allows small retailers to list local stock on Google and Amazon for same-day localized pickup. This levels the playing field, allowing brick-and-mortar stores to compete with monolithic delivery networks.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-02-18",
+    "employee_count": 95,
+    "founding_year": 2021,
+    "headquarters_location": "Chicago, IL, USA"
+  },
+  {
+    "company_name": "LoyalCoin",
+    "sector": "Retail",
+    "description": "LoyalCoin builds blockchain-based unified rewards platforms for retail consortiums. Consumers earn a universal digital token instead of siloed brand points, which can be spent across a massive network of participating merchants. This heavily incentivizes cross-shopping and increases long-term customer lifetime value.",
+    "funding_stage": "Pre-seed",
+    "last_funding_date": "2026-01-30",
+    "employee_count": 14,
+    "founding_year": 2025,
+    "headquarters_location": "Miami, FL, USA"
+  },
+  {
+    "company_name": "ForecastIQ",
+    "sector": "Retail",
+    "description": "ForecastIQ develops hyper-local demand forecasting AI for convenience store chains. By ingesting regional weather patterns, local event schedules, and social media trends, it predicts exact stock needs for perishable items. This minimizes food waste while ensuring stores never run out of high-demand event supplies.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-11-15",
+    "employee_count": 210,
+    "founding_year": 2019,
+    "headquarters_location": "Dallas, TX, USA"
+  },
+  {
+    "company_name": "ScanAndGo OS",
+    "sector": "Retail",
+    "description": "ScanAndGo OS provides frictionless, cashierless checkout technology tailored for mid-sized pharmacies and bodegas. Customers scan items with their own smartphones and pay via a saved digital wallet as they walk out the door. This massively reduces checkout lines and allows staff to focus on customer service.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-05-25",
+    "employee_count": 130,
+    "founding_year": 2020,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "PromoPersonal",
+    "sector": "Retail",
+    "description": "PromoPersonal offers an individualized digital coupon generation engine for grocery loyalty apps. The AI analyzes historical purchasing data to generate dynamic discounts on items a specific user is statistically likely to abandon. This surgical approach to discounting protects profit margins compared to blanket store sales.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-08-10",
+    "employee_count": 70,
+    "founding_year": 2022,
+    "headquarters_location": "Seattle, WA, USA"
+  },
+  {
+    "company_name": "Wardrobe Sync",
+    "sector": "Retail",
+    "description": "Wardrobe Sync builds subscription box management software specifically for fashion curation startups. The platform handles complex size-matching algorithms, inventory reserving, and recurring billing all within a single interface. It allows niche stylists to easily launch and scale personalized 'box-of-the-month' business models.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-10-14",
+    "employee_count": 22,
+    "founding_year": 2024,
+    "headquarters_location": "Portland, OR, USA"
+  },
+  {
+    "company_name": "PriceMatch Pro",
+    "sector": "Retail",
+    "description": "PriceMatch Pro operates an automated map pricing and MAP (Minimum Advertised Price) enforcement scraper. It scours third-party marketplaces and rogue seller websites to instantly flag unauthorized vendors undercutting brand pricing. This helps premium electronics and sporting goods brands protect their perceived market value.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-01-08",
+    "employee_count": 88,
+    "founding_year": 2021,
+    "headquarters_location": "Denver, CO, USA"
+  },
+  {
+    "company_name": "BeaconConnect",
+    "sector": "Retail",
+    "description": "BeaconConnect provides proximity marketing hardware and software for massive shopping malls. As shoppers walk past participating storefronts, low-energy Bluetooth beacons push highly relevant, time-sensitive flash sales to their smartphones. This seamlessly bridges the digital advertising space with physical intent-to-buy actions.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-06-30",
+    "employee_count": 52,
+    "founding_year": 2023,
+    "headquarters_location": "Atlanta, GA, USA"
+  },
+  {
+    "company_name": "MicroFulfill",
+    "sector": "Retail",
+    "description": "MicroFulfill builds dense, automated storage and retrieval systems (ASRS) that fit in the backrooms of standard retail stores. High-speed robotics pick online grocery orders in minutes, turning regular storefronts into hyper-local fulfillment hubs. This is the key infrastructure enabling profitable 15-minute grocery delivery in urban centers.",
+    "funding_stage": "Series C",
+    "last_funding_date": "2024-09-20",
+    "employee_count": 280,
+    "founding_year": 2018,
+    "headquarters_location": "Boston, MA, USA"
+  },
+  {
+    "company_name": "ReviewScout AI",
+    "sector": "Retail",
+    "description": "ReviewScout AI develops natural language processing tools to aggregate and analyze consumer reviews across the web. The platform provides product development teams with concise reports on specific recurring complaints or desired features. This allows brands to rapidly iterate on product flaws based entirely on direct consumer feedback.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-12-15",
+    "employee_count": 48,
+    "founding_year": 2022,
+    "headquarters_location": "London, UK"
+  },
+  {
+    "company_name": "StaffShift Retail",
+    "sector": "Retail",
+    "description": "StaffShift Retail creates dynamic employee scheduling software optimized for fluctuating seasonal foot traffic. The algorithm connects POS sales data with weather forecasts to predict the exact number of cashiers needed on any given Tuesday. This eliminates the massive operational waste of overstaffing while ensuring excellent customer service.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2024-12-05",
+    "employee_count": 115,
+    "founding_year": 2020,
+    "headquarters_location": "Toronto, ON, Canada"
+  },
+  {
+    "company_name": "VisualMerch VR",
+    "sector": "Retail",
+    "description": "VisualMerch VR provides virtual reality store planning software for major big-box retailers. Merchandising teams can drag and drop seasonal displays within a digital twin of their stores to optimize visual flow before physically moving fixtures. This saves countless labor hours and standardizes aesthetic rollouts across global locations.",
+    "funding_stage": "Seed",
+    "last_funding_date": "2025-11-10",
+    "employee_count": 26,
+    "founding_year": 2024,
+    "headquarters_location": "Minneapolis, MN, USA"
+  },
+  {
+    "company_name": "PopUp Core",
+    "sector": "Retail",
+    "description": "PopUp Core offers a comprehensive 'retail-in-a-box' software suite for temporary brand activations and pop-up shops. The iPad-based POS handles offline credit card processing, instant inventory synchronization, and localized sales tax compliance effortlessly. It removes all technical barriers for DTC brands looking to experiment with physical retail.",
+    "funding_stage": "Series A",
+    "last_funding_date": "2025-04-20",
+    "employee_count": 62,
+    "founding_year": 2023,
+    "headquarters_location": "New York, NY, USA"
+  },
+  {
+    "company_name": "AuthMarket",
+    "sector": "Retail",
+    "description": "AuthMarket operates an AI-assisted authentication platform for the luxury sneaker and handbag resale market. Machine learning models analyze thousands of microscopic stitching and material photos to verify product authenticity, acting as a foolproof assistant to human appraisers. This effectively stamps out highly sophisticated counterfeits in peer-to-peer marketplaces.",
+    "funding_stage": "Series B",
+    "last_funding_date": "2025-07-05",
+    "employee_count": 140,
+    "founding_year": 2021,
+    "headquarters_location": "Detroit, MI, USA"
+  }
+]
