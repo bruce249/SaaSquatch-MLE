@@ -2,7 +2,7 @@
 
 Welcome to the **Hybrid ICP Scoring Engine**! 
 
-If you are new to sales, marketing, or programming, don't worry—this guide is written so that anyone can understand what this tool does, why it is useful, and exactly how to run it on your own computer.
+If you are new to sales, marketing, or programming, don't worry-this guide is written so that anyone can understand what this tool does, why it is useful, and exactly how to run it on your own computer.
 
 ---
 
