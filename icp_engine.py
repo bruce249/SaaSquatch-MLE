@@ -1,6 +1,5 @@
 """
 Hybrid ICP Scoring Engine
-=========================
 A 3-stage pipeline that takes a natural-language Ideal Customer Profile (ICP)
 request, searches a JSON database of companies, and returns a scored and
 ranked list of the best matches.
@@ -35,9 +34,7 @@ from huggingface_hub import InferenceClient
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# ---------------------------------------------------------------------------
 # Configuration
-# ---------------------------------------------------------------------------
 load_dotenv()  # Load .env file if present
 
 DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "companies.json")
@@ -52,10 +49,7 @@ EXAMPLE_PROMPT = (
     "Ideally founded after 2020 and based in the United States."
 )
 
-
-# ---------------------------------------------------------------------------
 # Retry helper for HF Inference API calls (handles rate limits)
-# ---------------------------------------------------------------------------
 
 def _hf_call_with_retry(hf_client: InferenceClient, messages: list,
                         max_retries: int = 5) -> str:
@@ -96,10 +90,7 @@ def _extract_json(text: str) -> dict | list:
         text = "\n".join(lines).strip()
     return json.loads(text)
 
-
-# ═══════════════════════════════════════════════════════════════════════════
 # STAGE 1 — HARD FILTER (Metadata Extraction & Filtering)
-# ═══════════════════════════════════════════════════════════════════════════
 
 def extract_hard_filters(user_prompt: str, hf_client: InferenceClient) -> dict:
     """
@@ -155,23 +146,23 @@ def apply_hard_filters(df: pd.DataFrame, filters: dict) -> pd.DataFrame:
     """
     filtered = df.copy()
 
-    # --- Sector filter ---
+    # Sector filter 
     if filters.get("sector"):
         sector = filters["sector"].strip().lower()
         filtered = filtered[filtered["sector"].str.lower() == sector]
 
-    # --- Employee count range ---
+    # Employee count range 
     if filters.get("min_employees") is not None:
         filtered = filtered[filtered["employee_count"] >= filters["min_employees"]]
     if filters.get("max_employees") is not None:
         filtered = filtered[filtered["employee_count"] <= filters["max_employees"]]
 
-    # --- Funding stage whitelist ---
+    #  Funding stage whitelist 
     if filters.get("funding_stages"):
         stages_lower = [s.strip().lower() for s in filters["funding_stages"]]
         filtered = filtered[filtered["funding_stage"].str.lower().isin(stages_lower)]
 
-    # --- Location keyword matching (partial, case-insensitive) ---
+    # Location keyword matching (partial, case-insensitive) 
     if filters.get("location_keywords"):
         # Expand common country synonyms so we always match abbreviations
         synonyms = {
@@ -196,7 +187,7 @@ def apply_hard_filters(df: pd.DataFrame, filters: dict) -> pd.DataFrame:
                 )
             ]
 
-    # --- Founding year bounds ---
+    # Founding year bounds 
     if filters.get("founded_after") is not None:
         filtered = filtered[filtered["founding_year"] >= filters["founded_after"]]
     if filters.get("founded_before") is not None:
@@ -204,11 +195,7 @@ def apply_hard_filters(df: pd.DataFrame, filters: dict) -> pd.DataFrame:
 
     return filtered.reset_index(drop=True)
 
-
-# ═══════════════════════════════════════════════════════════════════════════
 # STAGE 2 — SEMANTIC SEARCH (Vector Embeddings & Cosine Similarity)
-# ═══════════════════════════════════════════════════════════════════════════
-
 def semantic_search(
     filtered_df: pd.DataFrame,
     user_prompt: str,
@@ -219,7 +206,7 @@ def semantic_search(
     sentence-transformer model, then rank companies by cosine similarity.
     Returns the top-k companies as a DataFrame with a `similarity_score` column.
     """
-    print("\n⏳  Loading embedding model (local, no API cost)...")
+    print("\n  Loading embedding model (local, no API cost)...")
     model = SentenceTransformer(EMBEDDING_MODEL_NAME)
 
     descriptions = filtered_df["description"].tolist()
@@ -238,10 +225,7 @@ def semantic_search(
 
     return result.reset_index(drop=True)
 
-
-# ═══════════════════════════════════════════════════════════════════════════
 # STAGE 3 — LLM GRADER (ICP Scoring by a RevOps Analyst)
-# ═══════════════════════════════════════════════════════════════════════════
 
 def llm_grade(
     top_companies: pd.DataFrame,
@@ -302,10 +286,7 @@ def llm_grade(
         return graded
     return graded.get("results", [])
 
-
-# ═══════════════════════════════════════════════════════════════════════════
 # PIPELINE ORCHESTRATOR (Importable)
-# ═══════════════════════════════════════════════════════════════════════════
 
 def run_icp_pipeline(user_prompt: str, hf_client: InferenceClient, df: pd.DataFrame) -> dict:
     """
@@ -356,31 +337,30 @@ def run_icp_pipeline(user_prompt: str, hf_client: InferenceClient, df: pd.DataFr
     return result
 
 
-# ═══════════════════════════════════════════════════════════════════════════
-# CLI ENTRY POINT
-# ═══════════════════════════════════════════════════════════════════════════
+
+# CLI ENTRY POINT 
 
 def main():
     """
     End-to-end ICP scoring pipeline CLI runner.
     """
-    # --- Validate API key ---
+    # Validate API key 
     hf_token = os.environ.get("HF_TOKEN")
     if not hf_token:
-        print("❌  Error: HF_TOKEN environment variable is not set.")
+        print("  Error: HF_TOKEN environment variable is not set.")
         print("   Set it with:  set HF_TOKEN=hf_...")
         sys.exit(1)
 
     hf_client = InferenceClient(token=hf_token)
 
-    # --- Load company data ---
-    print("📂  Loading company data...")
+    # Load company data 
+    print("  Loading company data...")
     with open(DATA_FILE, "r", encoding="utf-8") as f:
         companies = json.load(f)
     df = pd.DataFrame(companies)
     print(f"   Loaded {len(df)} companies.\n")
 
-    # --- Get ICP prompt ---
+    # Get ICP prompt 
     print("=" * 70)
     print("  HYBRID ICP SCORING ENGINE")
     print("=" * 70)
@@ -388,19 +368,19 @@ def main():
         "\nDescribe your Ideal Customer Profile (or press Enter for demo):\n> "
     ).strip()
     user_prompt = user_input if user_input else EXAMPLE_PROMPT
-    print(f"\n📋  ICP Prompt:\n   \"{user_prompt}\"\n")
+    print(f"\n  ICP Prompt:\n   \"{user_prompt}\"\n")
 
-    # ── RUN PIPELINE ──────────────────────────────────────────────────────
+    # RUN PIPELINE
     results = run_icp_pipeline(user_prompt, hf_client, df)
 
     print("─" * 70)
     print("  STAGE 1 → Hard Filter (LLM Metadata Extraction)")
     print("─" * 70)
-    print(f"\n🔍  Extracted Constraints:\n{json.dumps(results['extracted_filters'], indent=4)}")
-    print(f"\n✅  Companies after hard filter: {results['survivor_count']} / {results['total_count']}")
+    print(f"\n  Extracted Constraints:\n{json.dumps(results['extracted_filters'], indent=4)}")
+    print(f"\n  Companies after hard filter: {results['survivor_count']} / {results['total_count']}")
     
     if results["error"]:
-        print(f"\n⚠️  {results['error']}")
+        print(f"\n  {results['error']}")
         sys.exit(0)
 
     print("   Survivors:", ", ".join(results["surviving_companies"]))
@@ -408,7 +388,7 @@ def main():
     print(f"\n{'─' * 70}")
     print("  STAGE 2 → Semantic Search (Embedding Similarity)")
     print("─" * 70)
-    print(f"\n🏆  Top {len(results['top_semantic_matches'])} Semantic Matches:")
+    print(f"\n  Top {len(results['top_semantic_matches'])} Semantic Matches:")
     for i, match in enumerate(results['top_semantic_matches']):
         print(f"   {i + 1:>2}. {match['company_name']:<30} (similarity: {match['similarity_score']:.4f})")
 

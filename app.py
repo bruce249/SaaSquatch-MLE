@@ -8,18 +8,14 @@ from huggingface_hub import InferenceClient
 
 from icp_engine import DATA_FILE, EXAMPLE_PROMPT, run_icp_pipeline
 
-# -----------------------------------------------------------------------------
 # Streamlit App Configuration
-# -----------------------------------------------------------------------------
 st.set_page_config(
     page_title="Hybrid ICP Scoring Engine",
     page_icon="🎯",
     layout="wide",
 )
 
-# -----------------------------------------------------------------------------
 # Helper Functions
-# -----------------------------------------------------------------------------
 @st.cache_data
 def load_data():
     with open(DATA_FILE, "r", encoding="utf-8") as f:
@@ -69,7 +65,7 @@ def run_analysis(user_prompt, hf_token, df):
         st.write("### Stage 3: RevOps Analyst ICP Scoring")
         st.success("LLM evaluation complete.")
         
-        st.write("#### 🏆 Final Ranked Results")
+        st.write("####  Final Ranked Results")
         
         for i, entry in enumerate(results["final_scores"]):
             score = entry['icp_score']
@@ -94,10 +90,7 @@ def run_analysis(user_prompt, hf_token, df):
                 """,
                 unsafe_allow_html=True
             )
-
-# -----------------------------------------------------------------------------
 # Main UI Layout
-# -----------------------------------------------------------------------------
 def main():
     st.title("🎯 Hybrid ICP Scoring Engine")
     st.markdown("""
