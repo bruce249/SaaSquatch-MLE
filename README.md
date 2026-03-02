@@ -1,83 +1,89 @@
-# Hybrid ICP Scoring Engine
+# 🎯 Hybrid ICP Scoring Engine
 
-The Hybrid Ideal Customer Profile (ICP) Scoring Engine is a 3-stage modular pipeline designed to match natural-language customer requirements against a structured database of companies. It leverages Large Language Models (LLMs) for constraint extraction and reasoning, paired with local semantic search for accurate similarity ranking.
+Welcome to the **Hybrid ICP Scoring Engine**! 
 
-## System Architecture
+If you are new to sales, marketing, or programming, don't worry—this guide is written so that anyone can understand what this tool does, why it is useful, and exactly how to run it on your own computer.
 
-The pipeline processes a natural-language prompt through three distinct stages:
+---
 
-### Stage 1: Hard Filter (LLM Metadata Extraction)
-The system uses an LLM (`Qwen/Qwen2.5-Coder-7B-Instruct`) to extract hard constraints from the user's prompt. It parses the request into a structured JSON object containing:
-- Sector
-- Employee Count (Min/Max)
-- Funding Stages (e.g., Series A, Series B)
-- Location Keywords
-- Founding Year bounds
+## 🤔 What is this tool? 
 
-These constraints are then applied via Pandas dataframe filtering to immediately eliminate companies that do not meet the strict criteria. The system includes synonym expansion specifically for United States location matching to ensure robustness against varied data formats.
+In business, **ICP** stands for **"Ideal Customer Profile."** It describes the perfect type of company you want to sell your product or service to. For example, your ICP might be: *"Healthcare companies with more than 50 employees, located in the United States, that use Artificial Intelligence."*
 
-### Stage 2: Semantic Search (Vector Similarity)
-The companies that survive the hard filter are passed to a local embedding model (`BAAI/bge-small-en-v1.5`). The system vectorizes both the company descriptions and the original user ICP prompt. It calculates the cosine similarity between the prompt vector and each company vector, ranking the results and selecting the Top 10 semantic matches. Using a local embedding model avoids latency and API costs for bulk similarity comparisons.
+Usually, finding companies that match your ICP means a human has to manually read through hundreds of company descriptions and guess which ones are the best fit.
 
-### Stage 3: LLM Grader (RevOps Analyst Scoring)
-The Top 10 semantic matches are sent to the LLM. The LLM acts as a senior RevOps analyst, evaluating each company against the user's detailed ICP description. It returns a scored JSON array where each company receives:
-- An ICP Score between 0 and 100
-- A precise, one-sentence explanation justifying the score based on the matching criteria
+**This tool automates that entirely using AI.** 
 
-## Project Structure
+You simply type out your Ideal Customer Profile in plain English. The engine will read a database of companies and use Artificial Intelligence to filter, rank, and score every single company, returning a list of the absolute best matches.
 
-- `app.py`: The Streamlit web application providing the graphical user interface.
-- `icp_engine.py`: The core pipeline orchestration and command-line interface logic.
-- `companies.json`: A standard JSON database containing records of 100 sample companies.
-- `requirements.txt`: Python package dependencies.
+---
 
-## Setup and Installation
+## ⚙️ How does it work? (The 3 Stages)
 
-### Prerequisites
-- Python 3.9 or higher is recommended.
-- A Hugging Face account and API Token (with access to the Inference API).
+When you hit "Run," the engine processes your request in three steps:
 
-### Installation Steps
+### Stage 1: The Hard Filter
+The system uses an advanced AI (like ChatGPT, but using an open-source model called `Qwen2.5-Coder-7B`) to read your prompt and extract the "hard facts." 
+* Did you mention a specific location? Employee constraints? A certain industry?
+The AI pulls these out and instantly deletes any companies from the database that don't satisfy these basic rules.
 
-1. Clone or navigate to the project repository.
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Set your Hugging Face API Token in your environment:
-   ```bash
-   # Windows (PowerShell)
-   $env:HF_TOKEN="your_huggingface_token"
-   
-   # Linux/macOS
-   export HF_TOKEN="your_huggingface_token"
-   ```
+### Stage 2: The Semantic Search
+Next, the system reads the descriptions of the surviving companies. Instead of just looking for exact keyword matches (which is clumsy), it uses an AI "Embedding Model" (`BAAI/bge-small-en-v1.5`). This model understands the *meaning* of words. It compares the meaning of your ICP to the meaning of each company's description and ranks the Top 10 closest matches.
 
-## Usage
+### Stage 3: The AI Evaluator (RevOps Analyst)
+Finally, the system sends those Top 10 companies back to the main AI. It asks the AI to act like a strict business analyst. The AI reads each company's profile deeply, gives it a score out of 100 based on how well it matches your original prompt, and provides a one-sentence explanation for *why* it gave that score.
 
-You can run the engine either via the interactive Web UI or as a Command-Line Interface.
+---
 
-### Option A: Web Interface (Streamlit)
-The recommended way to interact with the engine. It offers a clean, progressive loading interface with dynamic metric cards.
+## 🛠️ Step-by-Step Installation Guide
 
+Ready to try it yourself? Follow these steps exactly.
+
+### Step 1: Getting Ready
+1. You need **Python** installed on your computer. (If you don't have it, download it from [python.org](https://www.python.org/downloads/)).
+2. You need a free **Hugging Face** account. Hugging Face hosts the AI models we use. 
+   - Go to [huggingface.co](https://huggingface.co/) and create an account.
+   - Go to your account Settings -> "Access Tokens" and create a new token. Copy this token (it usually starts with `hf_`). Keep it secret!
+
+### Step 2: Downloading the Code
+If you are reading this on GitHub, click the green "Code" button and select "Download ZIP". Extract the folder to your computer.
+
+### Step 3: Installing Dependencies
+Open your computer's Terminal (Mac) or Command Prompt / PowerShell (Windows). Navigate to the folder where you extracted the code.
+
+Type the following command and press Enter:
+```bash
+pip install -r requirements.txt
+```
+*This downloads the necessary extra code packages required to run the AI, data tools, and the visual website interface.*
+
+---
+
+## 🚀 Running the Application
+
+This project comes with a beautiful, easy-to-use Web Interface.
+
+In your terminal, while inside the project folder, type:
 ```bash
 streamlit run app.py
 ```
-This will launch the application locally at `http://localhost:8501`. If you have not set the environment variable, you can securely input your Hugging Face token directly in the application's sidebar.
 
-### Option B: Command-Line Interface (CLI)
-The original execution method, useful for terminal environments or automated scripts.
+### Using the Web Interface
+1. Once you run the command above, a window will automatically open in your web browser.
+2. Looking at the **sidebar on the left**, paste your Hugging Face Access Token (the one starting with `hf_`) into the password box.
+3. In the **main text box**, type out what kind of companies you are looking for. (Or just click the "Load Demo Prompt" button for an example).
+4. Click the large **"Run Analysis"** button.
+5. Sit back and watch the AI work! It will show you the exact constraints it pulled out, the number of companies remaining, and eventually generate beautiful, color-coded scorecards for your top 10 leads.
 
-```bash
-python icp_engine.py
-```
-Upon running, you will be prompted to enter your Ideal Customer Profile description. Pressing Enter without typing will load a default demonstration prompt.
+---
 
-## Configuration
+## 🗂️ What are these files?
+For the curious, here is what the files in this folder actually do:
+- `app.py`: This contains the code that draws the buttons, text boxes, and Web Interface you see in your browser.
+- `icp_engine.py`: This is the real "brain" of the operation. It contains the code that talks to the AI, filters the data, and does the mathematical ranking.
+- `companies.json`: This is a sample database of 100 fake companies used for testing the engine. You can eventually replace this with your own sales database!
+- `requirements.txt`: A simple text file that tells your computer what extra Python packages to install.
 
-The core models and operational parameters can be adjusted directly in the configuration section of `icp_engine.py`:
+---
 
-- `LLM_MODEL`: Defines the Hugging Face model used for Stage 1 extraction and Stage 3 grading (currently set to `Qwen/Qwen2.5-Coder-7B-Instruct`).
-- `EMBEDDING_MODEL_NAME`: Defines the local sentence-transformer model used for Stage 2 (currently set to `BAAI/bge-small-en-v1.5`).
-- `TOP_K`: Determines how many companies proceed from Stage 2 to Stage 3 grading.
-- `DATA_FILE`: Points to the local JSON database file.
+*Enjoy finding your perfect sales leads effortlessly!*
