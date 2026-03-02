@@ -1,4 +1,4 @@
-# 🎯 Hybrid ICP Scoring Engine
+# Hybrid ICP Scoring Engine
 
 Welcome to the **Hybrid ICP Scoring Engine**! 
 
@@ -6,7 +6,7 @@ If you are new to sales, marketing, or programming, don't worry—this guide is 
 
 ---
 
-## 🤔 What is this tool? 
+## What is this tool? 
 
 In business, **ICP** stands for **"Ideal Customer Profile."** It describes the perfect type of company you want to sell your product or service to. For example, your ICP might be: *"Healthcare companies with more than 50 employees, located in the United States, that use Artificial Intelligence."*
 
@@ -18,7 +18,7 @@ You simply type out your Ideal Customer Profile in plain English. The engine wil
 
 ---
 
-## ⚙️ How does it work? (The 3 Stages)
+## How does it work? (The 3 Stages)
 
 When you hit "Run," the engine processes your request in three steps:
 
@@ -35,14 +35,14 @@ Finally, the system sends those Top 10 companies back to the main AI. It asks th
 
 ---
 
-## 🛠️ Step-by-Step Installation Guide
+## Step-by-Step Installation Guide
 
 Ready to try it yourself? Follow these steps exactly.
 
 ### Step 1: Getting Ready
-1. You need **Python** installed on your computer. (If you don't have it, download it from [python.org](https://www.python.org/downloads/)).
+1. You need **Python** installed on your computer. (If you don't have it, download it from python.org).
 2. You need a free **Hugging Face** account. Hugging Face hosts the AI models we use. 
-   - Go to [huggingface.co](https://huggingface.co/) and create an account.
+   - Go to huggingface.co and create an account.
    - Go to your account Settings -> "Access Tokens" and create a new token. Copy this token (it usually starts with `hf_`). Keep it secret!
 
 ### Step 2: Downloading the Code
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Running the Application
+## Running the Application
 
 This project comes with a beautiful, easy-to-use Web Interface.
 
@@ -77,7 +77,7 @@ streamlit run app.py
 
 ---
 
-## 🗂️ What are these files?
+## What are these files?
 For the curious, here is what the files in this folder actually do:
 - `app.py`: This contains the code that draws the buttons, text boxes, and Web Interface you see in your browser.
 - `icp_engine.py`: This is the real "brain" of the operation. It contains the code that talks to the AI, filters the data, and does the mathematical ranking.
